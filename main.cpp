@@ -11,7 +11,8 @@ void check_rng(T rng) {}
 /* What else would you do with a random number generator? 
 *  Generate a bunch of random numbers. */
 int main(int argc, char ** argv) {
-    xorshift32 rng{1010203};
+    std::random_device rd{};
+    xorwow rng{rd(), rd(), rd(), rd(), rd()};
     check_rng(rng);
     
     std::uniform_real_distribution<> distrib(0, 1);
