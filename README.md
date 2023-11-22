@@ -14,7 +14,7 @@ int main() {
 }
 ```
 
-They are compatible with the distribution generators in <random>:
+They are compatible with the distribution generators in `<random>`:
 
 ```c++
 #include <iostream>
