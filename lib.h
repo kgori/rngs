@@ -30,6 +30,6 @@ public:
 
     static constexpr uint_fast32_t min() { return 0; }
 
-    constexpr uint_fast32_t max() { return m - 1; }
+    static constexpr uint_fast32_t max() { return m - 1; }
 };
 
